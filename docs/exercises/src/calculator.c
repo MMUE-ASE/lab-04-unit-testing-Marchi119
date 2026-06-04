@@ -33,7 +33,12 @@ int calc_multiply(int a, int b)
  */
 int calc_clamp(int value, int low, int high)
 {
-    (void)low;
-    (void)high;
+    //(void)low;
+    //(void)high;
+    if (value < low) {
+        return low;
+    } else if (value > high) {
+        return high;
+    }
     return value; /* placeholder — replace with the real logic */
 }
